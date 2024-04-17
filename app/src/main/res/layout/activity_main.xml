@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.login.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextTextNome"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/background_editext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint=" Digite o nome do usuário:"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextTextPWD"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/background_editext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint=" Digite sua senha:"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+
+
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="143dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@mipmap/logo_unemat_menor" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/back_bottom"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
